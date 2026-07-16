@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: var(--brand-bg);
+  --color-brand-text: var(--brand-text);
+  --color-brand-dark-gray: var(--brand-dark-gray);
+  --color-brand-border: var(--brand-border);
+  --color-brand-card: var(--brand-card);
+  
+  --color-accent: #F7A928;
+  --color-accent-secondary: #FFD76A;
+  --color-accent-hover: #FFB84D;
+  
+  --font-sans: "Inter", "Helvetica Neue", "Arial", sans-serif;
+  --font-display: "Space Grotesk", "Helvetica Neue", "Arial", sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+}
+
+:root {
+  --brand-bg: #F7F6F2;
+  --brand-text: #111111;
+  --brand-dark-gray: #333333;
+  --brand-border: #EAEAEA;
+  --brand-card: #FFFFFF;
+}
+
+.dark {
+  --brand-bg: #141311;
+  --brand-text: #F7F6F2;
+  --brand-dark-gray: #B0AFA9;
+  --brand-border: #2C2923;
+  --brand-card: #1E1C18;
+}
+
+/* Custom global styles for cohesive aesthetic scrollbars and smooth experience */
+@layer base {
+  body {
+    background-color: var(--brand-bg);
+    color: var(--brand-text);
+    font-family: var(--font-sans);
+  }
+}
+
